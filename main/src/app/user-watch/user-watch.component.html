@@ -1,0 +1,4 @@
+<app-heading [currentIndex]="2"></app-heading>
+<div *ngIf="!login" id="published-list">
+    <app-published-view *ngFor="let p of published" [data]="p"></app-published-view>
+</div>

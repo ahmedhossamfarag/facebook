@@ -1,0 +1,9 @@
+<app-login *ngIf="login"></app-login>
+<app-heading [currentIndex]="1" *ngIf="!login"></app-heading>
+<div *ngIf="!login">
+    <div class="display-content">
+        <app-friend-view *ngFor="let f of friends" [data]="f"></app-friend-view>
+    </div>
+    <app-user-requests [user]="user"></app-user-requests>
+    <app-user-suggestions [user]="user"></app-user-suggestions>
+</div>

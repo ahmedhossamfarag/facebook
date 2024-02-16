@@ -1,0 +1,115 @@
+{
+    "users" : [
+        {
+          "name" : "ahmed",
+          "profileimage" : ""
+        },
+        {
+          "name" : "ali",
+          "profileimage" : ""
+        },
+        {
+          "name" : "mohamed",
+          "profileimage" : ""
+        },
+        {
+          "name" : "joha",
+          "profileimage" : ""
+        },
+        {
+          "name" : "nader",
+          "profileimage" : ""
+        },
+        {
+          "name" : "mahmood",
+          "profileimage" : ""
+        }
+      ] ,
+    "friends" : [
+        {
+          "username_1" : "ahmed",
+          "username_2" : "ali"
+        },
+        {
+          "username_1" : "ahmed",
+          "username_2" : "mahmood"
+        },
+        {
+          "username_1" : "ahmed",
+          "username_2" : "nader"
+        },
+        {
+          "username_1" : "mahamed",
+          "username_2" : "nader"
+        }
+      ],
+    "requests" : [
+        {
+          "username_1" : "ali",
+          "username_2" : "ahmed"
+        },
+        {
+          "username_1" : "nader",
+          "username_2" : "ahmed"
+        }
+      ],
+    "suggestions" : [
+        {
+          "username_1" : "ahmed",
+          "username_2" : "mohamed"
+        },
+        {
+          "username_1" : "ahmed",
+          "username_2" : "joha"
+        }
+      ],
+    "published" : [
+        {
+          "username" : "ahmed hsamm",
+          "date" : "2023-11-16T23:02:43.913Z",
+          "content" : "[{\"text\" : \"hi gay\"},{\"text\":\"yes It's me\"}]"
+        },
+        {
+          "username" : "ahmed hsamm",
+          "date" : "2023-11-16T23:02:43.913Z",
+          "content" : "[{\"text\" : \"hi gay\"},{\"img\":\"img.jpg\"}]"
+        },
+        {
+          "username" : "ahmed hsamm",
+          "date" : "2023-11-16T23:02:43.913Z",
+          "content" : "[{\"text\" : \"hi gay\"},{\"imgGroup\":[\"img.jpg\",\"img.jpg\"]}]"
+        },
+        
+        {
+          "username" : "ahmed hsamm",
+          "date" :"2023-11-16T23:02:43.913Z",
+          "content" : "[{\"text\" : \"hi gay\"},{\"video\":\"video.mp4\"}]"
+        }
+      ],
+    "products" : [
+        {
+          "image" : "",
+          "price" : 100,
+          "details" : "Cacao",
+          "place" : "Cairo"
+        },
+        {
+          "image" : "",
+          "price" : 150,
+          "details" : "Chocko",
+          "place" : "Cairo"
+        },
+        {
+          "image" : "",
+          "price" : 100,
+          "details" : "Panana",
+          "place" : "Cairo"
+        },
+        {
+          "image" : "",
+          "price" : 230,
+          "details" : "TV",
+          "place" : "Cairo"
+        }
+      ]
+}

@@ -1,0 +1,42 @@
+#full-height
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 100vh
+
+#full-width
+    display: flex
+    justify-content: center
+
+#login-div
+    width: 400px
+    padding: 5px
+    border-radius: 20px
+    background-color: #eee
+    text-align: center
+    height: fit-content
+
+#forget-password
+    font-size: 10px
+    margin: 10px
+
+.divider
+    border-bottom: 2px solid black
+    margin: 10px
+
+
+@mixin button
+    color: blue
+    background-color: white
+    margin-top: 5px
+    padding: 5px
+    border-radius: 5px
+    width: 100%
+    
+#create-account
+    @include button
+    margin-bottom: 10px
+
+#login-submit
+    @include button
+    border-style: none

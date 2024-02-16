@@ -1,0 +1,49 @@
+<div class="published" *ngIf="visible">
+    <div class="published-head">
+        <div class="published-head-data">
+            <ul class="list-group">
+                <li>{{data.username}}</li>
+                <li class="published-date">{{date?.toLocaleDateString()}} {{date?.toLocaleTimeString()}}</li>
+            </ul>
+        </div>
+        <div class="published-head-tool">
+            <ul class="list-group display-row">
+               <li>
+                <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor" class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq" style="--color: var(--secondary-icon);"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path></g></svg>
+                </li>
+               <li (click)="visible = false">
+                <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/BRHA-nd2kJR.png&quot;); background-position: -21px -105px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+               </li>
+            </ul>
+        </div>
+    </div>
+    <div class="published-content">
+        <div *ngFor="let c of content">
+            <div *ngIf="c.text">
+                <p>{{c.text}}</p>
+            </div>
+            <div class="content-img" *ngIf="c.img">
+                <img [src]="c.img" alt="img">
+            </div>
+            <div class="content-img-group"  *ngIf="c.imgGroup">
+                <div *ngFor="let m of c.imgGroup">
+                    <img [src]="m" alt="img">
+                </div>
+            </div>
+            <div *ngIf="c.video">
+                <video [src]="c.video"></video>
+            </div>
+        </div>
+    </div>
+    <div class="published-actions">
+        <button type="button" class="btn btn-primary">
+           <span>
+           </span>
+           <span> Like </span>
+        </button>
+        <button type="button" class="btn btn-primary">
+            <span></span>
+            <span>Not Like</span>
+         </button>
+    </div>
+</div>

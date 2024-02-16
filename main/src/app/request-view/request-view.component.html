@@ -1,0 +1,20 @@
+<div class="friend-view">
+    <div class="friend-img">
+        <img [src]="friendImage" alt="">
+    </div>
+    <div>
+        <p>
+            {{friendName}}
+        </p>
+    </div>
+    <div class="friends-num">
+        <p>
+            Has {{friendsNum}} friends.
+        </p>
+    </div>
+    <div class="btn-group" role="group" aria-label="actions">
+        <button type="button" class="btn btn-primary" (click)="accept()">Accept</button>
+        <button type="button" class="btn btn-primary" (click)="reject()">Reject</button>
+    </div>
+</div>
+

@@ -1,0 +1,5 @@
+<app-heading [currentIndex]="3"></app-heading>
+
+<div id="products-list">
+    <app-product-view *ngFor="let p of products" [data]="p"></app-product-view>
+</div>
